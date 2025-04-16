@@ -1,2 +1,3 @@
 # robloxspy
-Spy on users on roblox using public information on users. Quick and easy. No plugins required.
+RobloxSpy: Spy on roblox players using public information, fast, easy, reliable.
+MADE BY @obsskur
