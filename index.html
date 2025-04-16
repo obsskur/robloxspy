@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RobloxSpy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🔎 RobloxSpy</h1>
+    <input type="text" id="usernameInput" placeholder="Enter Roblox Username"/>
+    <button onclick="lookupUser()">Search</button>
+
+    <div id="result" class="hidden">
+      <h2>User Info</h2>
+      <p><strong>Username:</strong> <span id="displayName"></span></p>
+      <p><strong>User ID:</strong> <span id="userId"></span></p>
+      <p><strong>Past Usernames:</strong> <span id="pastNames"></span></p>
+      <p><strong>Created On:</strong> <span id="createdDate"></span></p>
+      <p><strong>Followers:</strong> <span id="followers"></span></p>
+      <p>
+        <strong>Friends (<span id="friendCount"></span>)</strong> 
+        <button onclick="toggleDropdown('friendsList')">Toggle</button>
+        <ul id="friendsList" class="dropdown hidden"></ul>
+      </p>
+      <p>
+        <strong>Groups (<span id="groupCount"></span>)</strong> 
+        <button onclick="toggleDropdown('groupList')">Toggle</button>
+        <ul id="groupList" class="dropdown hidden"></ul>
+      </p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
